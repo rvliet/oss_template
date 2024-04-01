@@ -6,7 +6,6 @@
     "author_email": "jedi_developers@stsci.edu",
     "project_url": "",
     "license": "BSD 3-Clause",
-    ,
     "minimum_python_version": "3.10",
     "use_compiled_extensions": "n",
     "enable_dynamic_dev_versions": "n",
