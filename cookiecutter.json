@@ -2,22 +2,12 @@
     "package_name": "packagename",
     "module_name": "{{ cookiecutter.package_name|lower()|replace(' ', '_')|replace('-', '_') }}",
     "short_description": "",
-    "author_name": "",
-    "author_email": "",
+    "author_name": "OSS",
+    "author_email": "jedi_developers@stsci.edu",
     "project_url": "",
-    "license": [
-        "BSD 3-Clause",
-        "GNU GPL v3+",
-        "Apache Software License 2.0",
-        "BSD 2-Clause",
-        "Other"
-    ],
-    "minimum_python_version": [
-        "3.9",
-        "3.10",
-        "3.11",
-        "3.12"
-    ],
+    "license": "BSD 3-Clause",
+    ,
+    "minimum_python_version": "3.10",
     "use_compiled_extensions": "n",
     "enable_dynamic_dev_versions": "n",
     "include_example_code": "n",
