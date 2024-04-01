@@ -1,5 +1,5 @@
 {
-    "package_name": "packagename",
+    "package_name": "oss_tool",
     "module_name": "{{ cookiecutter.package_name|lower()|replace(' ', '_')|replace('-', '_') }}",
     "short_description": "",
     "author_name": "OSS",

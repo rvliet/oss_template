@@ -108,3 +108,48 @@ exclude_lines = [
   # Ignore typing overloads
   "@overload",
 ]
+
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.pylint.basic]
+good-names = [ "i", "j", "k", "f", "x", "y", "z", "l", "ex", "Run", "_",]
+no-docstring-rgx = "^test_"
+max-args = 6
+
+[tool.pylint.logging]
+logging-format-style = "new"
+
+[tool.pylint."messages control"]
+disable = [
+    "raw-checker-failed",
+    "bad-inline-option",
+    "locally-disabled",
+    "file-ignored",
+    "suppressed-message",
+    "useless-suppression",
+    "deprecated-pragma",
+    "use-symbolic-message-instead",
+    "use-implicit-booleaness-not-comparison-to-string",
+    "use-implicit-booleaness-not-comparison-to-zero",
+    "use-dict-literal",
+    "use-list-literal",
+    "useless-object-inheritance",
+    "logging-fstring-interpolation",
+    "invalid-name",
+    "c-extension-no-member",
+    ]
+
+[tool.ruff.lint]
+select = [ "E", "F", "UP", "B", "SIM", "I",]
+ignore = [ "PLW1514",]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = [ "E402", "F401",]
+"test_*py" = [ "E402",]

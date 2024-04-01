@@ -24,6 +24,7 @@ copyright = f"{datetime.datetime.now().year}, {author}"  # noqa: A001
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
     "sphinx.ext.coverage",
@@ -32,8 +33,10 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.doctest",
     "sphinx.ext.mathjax",
+    "sphinx.ext.graphviz",
     "sphinx_automodapi.automodapi",
     "sphinx_automodapi.smart_resolver",
+    "sphinxcontrib.confluencebuilder",
 ]
 
 # Add any paths that contain templates here, relative to this directory.

@@ -1,0 +1,24 @@
+name: oss
+channels:
+  - astropy
+  - conda-forge
+  - defaults
+dependencies:
+  - python>3.11
+  - black
+  - bottleneck
+  - cruft
+  - docutils
+  - lxml
+  - matplotlib
+  - numpy
+  - pandas
+  - pylint
+  - pytest<8.0
+  - pytest-cov
+  - pytest-mock
+  - pytest-doctestplus
+  - sphinx
+  - sphinx-automodapi
+  - toml
+prefix: /Users/rvandervliet/anaconda3/envs/oss
