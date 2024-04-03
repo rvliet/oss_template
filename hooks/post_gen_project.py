@@ -21,9 +21,6 @@ def copy_file(original_filepath, new_filepath):
                     os.path.join(PROJECT_DIRECTORY, new_filepath))
 
 def process_license(license_name):
-    print(f'\n\nCopying license {license_name}')
-    print(f'project directory: {PROJECT_DIRECTORY}')
-    print(f'Contents: {os.listdir(PROJECT_DIRECTORY)}')
     if license_name in LICENSE_FILES:
         shutil.copyfile(os.path.join(PROJECT_DIRECTORY, 'licenses', LICENSE_FILES[license_name]),
                         os.path.join(PROJECT_DIRECTORY, 'licenses', 'LICENSE.rst'))
@@ -47,7 +44,7 @@ def process_github_workflow(include_cruft_update_github_workflow):
 if __name__ == '__main__':
     process_license('{{ cookiecutter.license }}')
     process_version('{{ cookiecutter.enable_dynamic_dev_versions }}')
-    process_github_workflow('{{ cookiecutter.include_cruft_update_github_workflow }}')
+    #process_github_workflow('{{ cookiecutter.include_cruft_update_github_workflow }}')
     #include_examples = '{{ cookiecutter.include_example_code }}' == 'y'
     #use_compiled = '{{ cookiecutter.use_compiled_extensions }}' == 'y'
 #
