@@ -21,7 +21,7 @@ def copy_file(original_filepath, new_filepath):
 
 def process_license(license_name):
     location = os.path.join(PROJECT_DIRECTORY, '{{ cookiecutter.namespace }}',
-                            '{{ cookiecutter.project_name }}')
+                            '{{ cookiecutter.module_name }}')
     print(f'\n\nCopying license {license_name}')
     print(f'project directory: {location}')
     print(f'Contents: {os.listdir(location)}')
