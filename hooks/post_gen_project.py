@@ -20,16 +20,18 @@ def copy_file(original_filepath, new_filepath):
                     os.path.join(PROJECT_DIRECTORY, new_filepath))
 
 def process_license(license_name):
+    location = os.path.join(PROJECT_DIRECTORY, '{{ cookiecutter.namespace }}',
+                            '{{ cookiecutter.project_name }}')
     print(f'\n\nCopying license {license_name}')
-    print(f'project directory: {PROJECT_DIRECTORY}')
-    print(f'Contents: {os.listdir(PROJECT_DIRECTORY)}')
+    print(f'project directory: {location}')
+    print(f'Contents: {os.listdir(location)}')
     if license_name in LICENSE_FILES:
-        shutil.copyfile(os.path.join(PROJECT_DIRECTORY, 'licenses', LICENSE_FILES[license_name]),
-                        os.path.join(PROJECT_DIRECTORY, 'licenses', 'LICENSE.rst'))
+        shutil.copyfile(os.path.join(location, 'licenses', LICENSE_FILES[license_name]),
+                        os.path.join(location, 'licenses', 'LICENSE.rst'))
 
     if license_name != "Other":
         for license_file in LICENSE_FILES.values():
-            os.remove(os.path.join(PROJECT_DIRECTORY, 'licenses', license_file))
+            os.remove(os.path.join(location, 'licenses', license_file))
 
 
 def process_version(enable_dynamic_dev_versions):
