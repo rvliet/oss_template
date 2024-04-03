@@ -5,7 +5,6 @@
     "short_description": "",
     "author_name": "OSS",
     "author_email": "jedi_developers@stsci.edu",
-    "namespace": "oss_tools",
     "project_url": "",
     "license": "BSD 3-Clause",
     "minimum_python_version": "3.10",
