@@ -22,7 +22,7 @@ def copy_file(original_filepath, new_filepath):
 def process_license(license_name):
     print(f'\n\nCopying license {license_name}')
     print(f'project directory: {PROJECT_DIRECTORY}')
-    print(f'Contents: {os.listdir(PROJECT_DIRECTORY}')
+    print(f'Contents: {os.listdir(PROJECT_DIRECTORY)}')
     if license_name in LICENSE_FILES:
         shutil.copyfile(os.path.join(PROJECT_DIRECTORY, 'licenses', LICENSE_FILES[license_name]),
                         os.path.join(PROJECT_DIRECTORY, 'licenses', 'LICENSE.rst'))
