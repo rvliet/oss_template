@@ -3,7 +3,8 @@
 import os
 import shutil
 
-PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
+PROJECT_DIRECTORY = os.path.join(os.path.realpath(os.path.curdir),
+                                 '{{ cookiecutter.namespace }}')
 LICENSE_FILES = {"BSD 3-Clause": 'BSD3.rst',
                  "GNU GPL v3+": 'GPLv3.rst',
                  "Apache Software License 2.0": 'APACHE2.rst',
@@ -20,17 +21,16 @@ def copy_file(original_filepath, new_filepath):
                     os.path.join(PROJECT_DIRECTORY, new_filepath))
 
 def process_license(license_name):
-    location = os.path.join(PROJECT_DIRECTORY, '{{ cookiecutter.namespace }}')
     print(f'\n\nCopying license {license_name}')
-    print(f'project directory: {location}')
-    print(f'Contents: {os.listdir(location)}')
+    print(f'project directory: {PROJECT_DIRECTORY}')
+    print(f'Contents: {os.listdir(PROJECT_DIRECTORY)}')
     if license_name in LICENSE_FILES:
-        shutil.copyfile(os.path.join(location, 'licenses', LICENSE_FILES[license_name]),
-                        os.path.join(location, 'licenses', 'LICENSE.rst'))
+        shutil.copyfile(os.path.join(PROJECT_DIRECTORY, 'licenses', LICENSE_FILES[license_name]),
+                        os.path.join(PROJECT_DIRECTORY, 'licenses', 'LICENSE.rst'))
 
     if license_name != "Other":
         for license_file in LICENSE_FILES.values():
-            os.remove(os.path.join(location, 'licenses', license_file))
+            os.remove(os.path.join(PROJECT_DIRECTORY, 'licenses', license_file))
 
 
 def process_version(enable_dynamic_dev_versions):
