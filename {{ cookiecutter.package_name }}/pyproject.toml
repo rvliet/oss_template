@@ -55,7 +55,7 @@ include-package-data = true
 [tool.setuptools.packages.find]
 
 [tool.setuptools_scm]
-{% if cookiecutter.enable_dynamic_dev_versions == 'y' -%}
+{% if cookiecutter._enable_dynamic_dev_versions == 'y' -%}
 write_to = "{{ cookiecutter.module_name }}/_version.py"
 {%- else -%}
 write_to = "{{ cookiecutter.module_name }}/version.py"
