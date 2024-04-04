@@ -43,9 +43,9 @@ docs = [
     "sphinx-automodapi",
 ]
 
-{% if cookiecutter.project_url -%}
+{% if cookiecutter._project_url -%}
 [project.urls]
-repository = "{{ cookiecutter.project_url }}"
+repository = "{{ cookiecutter._project_url }}"
 {%- endif %}
 
 [tool.setuptools]
