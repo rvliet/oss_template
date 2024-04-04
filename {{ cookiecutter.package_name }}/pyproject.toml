@@ -143,7 +143,7 @@ disable = [
     ]
 
 [tool.ruff.lint]
-select = [ "E", "F", "UP", "B", "SIM", "I",]
+select = [ "E", "F", "UP", "B", "SIM", "I", "NPY201"]
 ignore = [ "PLW1514",]
 
 [tool.ruff.format]
