@@ -22,4 +22,3 @@ dependencies:
   - sphinx
   - sphinx-automodapi
   - toml
-prefix: /Users/rvandervliet/anaconda3/envs/oss
