@@ -27,11 +27,6 @@ dependencies = [
 ]
 dynamic = ["version"]
 
-{% if cookiecutter._include_example_code == 'y' -%}
-[project.scripts]
-open_astronomy_package_template_example = "{{ cookiecutter.module_name }}.example_mod:main"
-
-{% endif -%}
 [project.optional-dependencies]
 test = [
     "pytest",
