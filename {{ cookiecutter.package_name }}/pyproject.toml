@@ -3,7 +3,7 @@ requires = [
   "setuptools>=62.1",
   "setuptools_scm[toml]>=6.2",
   "wheel",
-{%- if cookiecutter.use_compiled_extensions == 'y' %}
+{%- if cookiecutter._use_compiled_extensions == 'y' %}
   "extension-helpers",
   "numpy>=1.25",
   "cython"
@@ -27,7 +27,7 @@ dependencies = [
 ]
 dynamic = ["version"]
 
-{% if cookiecutter.include_example_code == 'y' -%}
+{% if cookiecutter._include_example_code == 'y' -%}
 [project.scripts]
 open_astronomy_package_template_example = "{{ cookiecutter.module_name }}.example_mod:main"
 

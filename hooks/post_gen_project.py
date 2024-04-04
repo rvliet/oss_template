@@ -42,10 +42,10 @@ def process_github_workflow(include_cruft_update_github_workflow):
 
 if __name__ == '__main__':
     process_license('{{ cookiecutter.license }}')
-    process_version('{{ cookiecutter.enable_dynamic_dev_versions }}')
-    process_github_workflow('{{ cookiecutter.include_cruft_update_github_workflow }}')
-    include_examples = '{{ cookiecutter.include_example_code }}' == 'y'
-    use_compiled = '{{ cookiecutter.use_compiled_extensions }}' == 'y'
+    process_version('{{ cookiecutter._enable_dynamic_dev_versions }}')
+    process_github_workflow('{{ cookiecutter._include_cruft_update_github_workflow }}')
+    include_examples = '{{ cookiecutter._include_example_code }}' == 'y'
+    use_compiled = '{{ cookiecutter._use_compiled_extensions }}' == 'y'
 
     if not(include_examples and use_compiled):
         remove_file('{{ cookiecutter.module_name }}/example_c.pyx')
