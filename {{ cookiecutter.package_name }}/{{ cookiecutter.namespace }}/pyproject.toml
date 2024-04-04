@@ -153,3 +153,6 @@ indent-style = "space"
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = [ "E402", "F401",]
 "test_*py" = [ "E402",]
+
+[tool.cruft]
+skip = ["*/__init__.py", "tests"]
