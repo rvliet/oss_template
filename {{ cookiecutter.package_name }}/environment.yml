@@ -12,7 +12,7 @@ dependencies:
   - docutils
   - lxml
   - matplotlib
-  - numpy<2.0.0
+  - numpy<2.0.1
   - pandas
   - pylint
   - pytest<8.0
