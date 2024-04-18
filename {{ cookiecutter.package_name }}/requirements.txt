@@ -1,0 +1,17 @@
+astropy
+black
+bottleneck
+cruft
+docutils
+lxml
+matplotlib
+numpy<=2.0.0
+pandas
+pylint
+pytest<=8.0
+pytest-cov
+pytest-mock
+pytest-doctestplus
+sphinx
+sphinx-automodapi
+toml

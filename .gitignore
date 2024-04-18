@@ -2,6 +2,7 @@ _build
 .vscode
 .tmp
 .tox
+.DS_Store
 
 # Python
 # Byte-compiled / optimized / DLL files
