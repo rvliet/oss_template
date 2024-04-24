@@ -105,10 +105,6 @@ exclude_lines = [
 ]
 
 
-[tool.ruff]
-line-length = 88
-indent-width = 4
-
 [tool.pylint.basic]
 good-names = [ "i", "j", "k", "f", "x", "y", "z", "l", "ex", "Run", "_",]
 no-docstring-rgx = "^test_"
@@ -136,6 +132,11 @@ disable = [
     "invalid-name",
     "c-extension-no-member",
     ]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+exclude = ["docs/conf.py"]
 
 [tool.ruff.lint]
 select = [ "E", "F", "UP", "B", "SIM", "I", "NPY201"]
