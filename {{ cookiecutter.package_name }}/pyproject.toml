@@ -140,7 +140,7 @@ exclude = ["docs/conf.py"]
 
 [tool.ruff.lint]
 select = [ "E", "F", "UP", "B", "SIM", "I", "NPY201"]
-ignore = [ "PLW1514",]
+ignore = [ "PLW1514", "SIM108"]
 
 [tool.ruff.format]
 quote-style = "single"
@@ -152,3 +152,9 @@ indent-style = "space"
 
 [tool.cruft]
 skip = ["*/__init__.py", "tests"]
+
+[tool.coverage.run]
+omit = [
+    '__init__.py',
+    'version.py',
+]

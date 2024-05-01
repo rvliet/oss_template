@@ -8,7 +8,7 @@
     "license": "BSD 3-Clause",
     "minimum_python_version": "3.11",
     "_use_compiled_extensions": "n",
-    "_enable_dynamic_dev_versions": "n",
+    "_enable_dynamic_dev_versions": "y",
     "_include_cruft_update_github_workflow": "n",
     "_sphinx_theme": "alabaster",
     "_parent_project": "",

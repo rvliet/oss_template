@@ -12,6 +12,7 @@ dependencies:
   - docutils
   - lxml
   - matplotlib
+  - mypy
   - numpy<2.0.0
   - pandas
   - pylint
