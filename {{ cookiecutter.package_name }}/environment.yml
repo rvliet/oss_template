@@ -10,6 +10,7 @@ dependencies:
   - bottleneck
   - cruft
   - docutils
+  - freezegun
   - lxml
   - matplotlib
   - mypy
