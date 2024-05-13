@@ -9,7 +9,6 @@ dependencies:
   - black
   - bottleneck
   - cruft
-  - dateutil
   - docutils
   - freezegun
   - lxml
@@ -22,6 +21,7 @@ dependencies:
   - pytest-cov
   - pytest-mock
   - pytest-doctestplus
+  - python-dateutil
   - ruff
   - sphinx
   - sphinx-automodapi
