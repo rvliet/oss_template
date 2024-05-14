@@ -81,6 +81,8 @@ omit = [
  "*/{{ cookiecutter.module_name }}/*/tests/*",
  "*/{{ cookiecutter.module_name }}/extern/*",
  "*/{{ cookiecutter.module_name }}/version*",
+ "__init__.py",
+ "version.py",
 ]
 
 [tool.coverage.report]
@@ -153,8 +155,3 @@ indent-style = "space"
 [tool.cruft]
 skip = ["*/__init__.py", "tests"]
 
-[tool.coverage.run]
-omit = [
-    '__init__.py',
-    'version.py',
-]
