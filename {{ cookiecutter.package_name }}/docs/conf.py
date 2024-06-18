@@ -36,7 +36,6 @@ extensions = [
     "sphinx.ext.graphviz",
     "sphinx_automodapi.automodapi",
     "sphinx_automodapi.smart_resolver",
-    "sphinxcontrib.confluencebuilder",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
