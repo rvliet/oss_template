@@ -15,6 +15,7 @@ dependencies:
   - matplotlib
   - mypy
   - numpy<2.0.0
+  - openpyxl
   - pandas
   - pylint
   - pytest<8.0
